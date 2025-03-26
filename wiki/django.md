@@ -44,6 +44,9 @@ TEMPLATES = [
 ```
 
 4. Import this file in the app/view.py that you require
+5. To deal with static file such as css and images in the django itself we need to do others configurations.
+   For the purpose of this project i will not use static files right now, but should i need i need to change
+   some configs in the config/settings.py and some commands like 'collectstatic'.
 
 # Apps in Django
 
