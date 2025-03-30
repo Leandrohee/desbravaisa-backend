@@ -19,8 +19,10 @@ pipenv install
 pipenv shell
 ```
 
-3. Installing django
+3. Installing and Initiating django
 
 ```bash
 pipenv install django
+django-admin startproject config .      #Initiate the project
+python manage.py runserver              #Start the server
 ```

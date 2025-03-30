@@ -9,8 +9,10 @@ python manage.py runserver
 
 # Libs used in this project
 
-1. Django
+1. django
 2. python-dotenv
+3. djangorestframework 
+4. psycopg2
 
 # Django structure
 

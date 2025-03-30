@@ -59,7 +59,9 @@ Creating an new app
 django-admin startapp <nameOfTheApp>
 ```
 
-When creating an app it will create also the MVT related to this app.
+When creating an app it will create also the MVT structure related to this app.
+
+_After creating the app we need to import into config/settings/INSTALLED_APPS_
 
 # MVT in Django
 
@@ -68,3 +70,63 @@ Django uses MVT in his structure. MVT stands for Model, View, Template and is si
 1. Model
 2. View
 3. Template
+
+# Rest Api
+
+We need to install the djangorestframework in order to build Rest API in django.
+
+Installing
+
+```bash
+pipenv install djangorestframework
+```
+
+After installing we need to import into INSTALLED_APPS in config/settings
+
+# Database + PostgreSql
+
+We have to install this lib to connect the postgre database into Django
+
+```bash
+pipenv install psycopg2
+```
+
+How to make sure if the db is connected:
+
+```bash
+python manage.py dbshell
+exit
+```
+
+### How to create an shcema with migrations instead of the sheel
+
+i going to create an schema with migrations instead of creating with the django db shell.
+
+```bash
+python manage.py makemigrations --empty <nameOfTheApp> --name <nameOfMigrationFile>
+python manage.py makemigrations --empty teste_rest --name create_schema_pessoas
+```
+
+this will generate an file inside the folder app/migrations
+
+```python
+from django.db import migrations
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+    ]
+
+    operations = [
+        migrations.RunSQL("CREATE SCHEMA IF NOT EXISTS pessoas;")
+    ]
+```
+
+Creating a table realated to this schema
+
+1. Create the class that is going to be the table
+2. Make the migration
+
+```bash
+python manage.py makemigrations --name create_table_pessoas
+```

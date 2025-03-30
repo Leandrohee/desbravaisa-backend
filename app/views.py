@@ -16,7 +16,7 @@ def index(request):
                     padding: 10vh;
                     margin: 50px;
                     height: calc(100vh - 100px - 20vh);
-                    background-color: salmon;
+                    background-color: #EAEAEA;
                     border-radius: 50px;
                 "
             >
