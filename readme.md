@@ -4,7 +4,15 @@
 
 ```bash
 pipenv shell
-python manage.py runserver
+pipenv run start
+```
+
+For the command 'pipenv run start" to work we need to config the Pipfile with the correct script
+
+
+```python
+[scripts]
+start = "python manage.py runserver"
 ```
 
 # Libs used in this project

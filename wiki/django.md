@@ -130,3 +130,5 @@ Creating a table realated to this schema
 ```bash
 python manage.py makemigrations --name create_table_pessoas
 ```
+
+# Migrations

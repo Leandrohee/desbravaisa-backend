@@ -7,8 +7,15 @@ name = "pypi"
 django = "*"
 python-dotenv = "*"
 djangorestframework = "*"
+pytz = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.13"
+
+[scripts]
+dev = "python manage.py runserver"
+showmigrations = "python manage.py showmigrations"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
