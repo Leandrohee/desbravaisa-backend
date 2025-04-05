@@ -132,3 +132,23 @@ python manage.py makemigrations --name create_table_pessoas
 ```
 
 # Migrations
+
+```bash
+pipenv run makemigrations
+pipenv run migrate
+
+python manage.py makemigrations
+python manage.py migrate
+```
+
+# Admin
+
+To acess the admin page you need to a super user. Type the command:
+
+```bash
+python manage.py createsuperuser
+```
+
+- Email: isabellatolentinooo@gmail.com
+- Login: isa
+- senha: _mesma do celular dela_

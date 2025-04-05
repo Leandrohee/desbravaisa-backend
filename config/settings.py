@@ -32,8 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'app',
-    'teste_rest'   
+    'app.apps.AppConfig',
+    'teste_rest.apps.TesteRestConfig'   
 ]
 
 MIDDLEWARE = [
@@ -65,8 +65,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
-# Database
 
 DATABASES = {
     'default': {
